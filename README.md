@@ -51,7 +51,7 @@ For each request get the movie people. People api returns the people data with k
 `"id", "name", "species", "url"` for our usecase. So in the end the end-point will return the people data in above form for all the people of a movie.
 
 #### Authentication
-I have added additional permission to check the genuine user.
+I have added additional permission to check the genuine user. Header of the request must have `Authorization`
 
 `{"Authorization": ghiblikey}`
 
@@ -61,7 +61,7 @@ At each level I have tried to handle the possible exceptions being thrown. If so
 Debugging will become much easier with all the exceptions and log statement added at each points.
 
 #### config ini
-Keep all the secret information in this file like `auth key`, `password` etc.
+Keep all the secret information in this file like `auth key`, `password`, `base_url` etc.
 And add it into .gitignore file to avoid commit. (I have commited this file too just to make the project runnable end to end)
 
 #### Caching of api request
